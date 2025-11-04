@@ -246,31 +246,20 @@
         }
         
         .product-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    font-size: 1.3rem;
-    color: #000000;
-    margin-top: 20px;
-    text-shadow: 1px 1px 0 #cccccc;
-}
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            color: #000000;
+            margin-top: 20px;
+            text-shadow: 1px 1px 0 #cccccc;
+        }
 
-.diamond-icon {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-        
-        .diamond-icon::before {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            right: 2px;
-            bottom: 2px;
-            background: #f0f0f0;
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        .diamond-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
         }
         
         .product-category {
@@ -376,6 +365,7 @@
             <ul class="nav-list">
                 <li><a href="#first-floor" class="nav-link">Нижняя палуба</a></li>
                 <li><a href="#second-floor" class="nav-link">Средняя палуба</a></li>
+                <li><a href="#third-floor" class="nav-link">Верхняя палуба</a></li>
             </ul>
         </div>
     </nav>
@@ -488,10 +478,10 @@
                         </div>
                     </div>
 
-                    <!-- Мангровое дерево -->
+                    <!-- Бревно белого дуба -->
                     <div class="product-card" data-category="wood" data-price="2">
                         <div class="product-category">Дерево</div>
-                        <img src="images/pale_oak_log.png" alt="Мангровое дерево" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="images/pale_oak_log.png" alt="Бревно белого дуба" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <div class="product-icon" style="display:none">🌲</div>
                         <h3 class="product-name">Бревно белого дуба (стак)</h3>
                         <div class="product-price">
@@ -500,9 +490,10 @@
                         </div>
                     </div>
 
+                    <!-- Багровый стебель -->
                     <div class="product-card" data-category="wood" data-price="2">
                         <div class="product-category">Дерево</div>
-                        <img src="images/crimson_nylium.png" alt="Мангровое дерево" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="images/crimson_nylium.png" alt="Багровый стебель" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <div class="product-icon" style="display:none">🌲</div>
                         <h3 class="product-name">Багровый стебель (стак)</h3>
                         <div class="product-price">
@@ -511,10 +502,10 @@
                         </div>
                     </div>
 
-                    
+                    <!-- Искажённый стебель -->
                     <div class="product-card" data-category="wood" data-price="2">
                         <div class="product-category">Дерево</div>
-                        <img src="images/stripped_warped_stem.png" alt="Мангровое дерево" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <img src="images/stripped_warped_stem.png" alt="Искажённый стебель" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                         <div class="product-icon" style="display:none">🌲</div>
                         <h3 class="product-name">Искажённый стебель (стак)</h3>
                         <div class="product-price">
@@ -522,7 +513,6 @@
                             <img src="images/diamond.png" class="diamond-icon" alt="алмаз">
                         </div>
                     </div>
-                    
                     
                     <!-- Огненные стержни -->
                     <div class="product-card" data-category="other" data-price="1">
@@ -1096,6 +1086,69 @@
                 </div>
             </div>
         </section>
+
+        <section id="third-floor" class="section">
+            <div class="container">
+                <h2 class="section-title">Верхняя палуба</h2>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="category">По категориям</button>
+                    <button class="filter-btn" data-filter="cheap">Дешевле</button>
+                    <button class="filter-btn" data-filter="expensive">Дороже</button>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Сверкающий ломтик арбуза -->
+                    <div class="product-card" data-category="food" data-price="1">
+                        <div class="product-category">Еда</div>
+                        <img src="images/glistering_melon_slice.png" alt="Сверкающий ломтик арбуза" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <div class="product-icon" style="display:none">🍉</div>
+                        <h3 class="product-name">Сверкающий ломтик арбуза (стак)</h3>
+                        <div class="product-price">
+                            <span>1</span>
+                            <img src="images/diamond.png" class="diamond-icon" alt="алмаз">
+                        </div>
+                    </div>
+                    
+                    <!-- Золотая морковь -->
+                    <div class="product-card" data-category="food" data-price="3">
+                        <div class="product-category">Еда</div>
+                        <img src="images/golden_carrot.png" alt="Золотая морковь" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <div class="product-icon" style="display:none">🥕</div>
+                        <h3 class="product-name">Золотая морковь (стак)</h3>
+                        <div class="product-price">
+                            <span>3</span>
+                            <img src="images/diamond.png" class="diamond-icon" alt="алмаз">
+                        </div>
+                    </div>
+                    
+                    <!-- Тыквенный пирог -->
+                    <div class="product-card" data-category="food" data-price="2">
+                        <div class="product-category">Еда</div>
+                        <img src="images/pumpkin_pie.png" alt="Тыквенный пирог" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <div class="product-icon" style="display:none">🥧</div>
+                        <h3 class="product-name">Тыквенный пирог (стак)</h3>
+                        <div class="product-price">
+                            <span>2</span>
+                            <img src="images/diamond.png" class="diamond-icon" alt="алмаз">
+                        </div>
+                    </div>
+                    
+                    <!-- Стейк -->
+                    <div class="product-card" data-category="food" data-price="1">
+                        <div class="product-category">Еда</div>
+                        <img src="images/cooked_beef.png" alt="Стейк" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <div class="product-icon" style="display:none">🥩</div>
+                        <h3 class="product-name">Стейк (стак)</h3>
+                        <div class="product-price">
+                            <span>1</span>
+                            <img src="images/diamond.png" class="diamond-icon" alt="алмаз">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -1128,7 +1181,8 @@
                         'book': 4,
                         'trim': 5,
                         'blocks': 6,
-                        'other': 7
+                        'food': 7,
+                        'other': 8
                     };
                     
                     if (filter === 'cheap') {
@@ -1190,7 +1244,3 @@
     </script>
 </body>
 </html>
-
-
-
-
